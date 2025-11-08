@@ -28,3 +28,4 @@ build/
 
 # Coverage reports (if you ever use Jest)
 coverage/
+.env

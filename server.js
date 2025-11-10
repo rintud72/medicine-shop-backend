@@ -23,11 +23,14 @@ app.use(
 
 
 // ✅ CORS configuration
-const cors = require("cors");
 app.use(cors({
-  origin: "http://localhost:5173", // frontend port
+  origin: [
+    "http://localhost:5173",
+    "https://beautiful-pastelito-12df21.netlify.app"
+  ],
   credentials: true
 }));
+
 
 // ✅ Middleware (বাকিগুলো)
 app.use(bodyParser.json());
